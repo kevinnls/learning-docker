@@ -3,9 +3,11 @@ version: '0.2.0'
 services:
     fend:
         build: fend
-        ports: 9080:9080
+        ports: 
+            - 9080:9080
 
     bend:
         build: bend
-        ports: 8080:8080
+        ports: 
+            - 8080:8080
 

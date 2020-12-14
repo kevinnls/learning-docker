@@ -2,11 +2,11 @@ FROM node:latest
 
 WORKDIR /app
 
-COPY bend/package.json bend/yarn.lock ./
+COPY package.json yarn.lock ./
 
 RUN yarn install
 
-COPY ./bend ./
+COPY ./ ./
 
 ENV PORT=8080
 
