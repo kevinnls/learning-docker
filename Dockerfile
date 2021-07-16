@@ -1,7 +1,7 @@
 FROM alpine
 RUN printf '%s\n' \
 '#!/usr/bin/env sh' \
-'exec echo "$@"' \
+'echo "$@"' \
 >/entrypoint.sh && chmod +x /entrypoint.sh
 USER 9999
 
